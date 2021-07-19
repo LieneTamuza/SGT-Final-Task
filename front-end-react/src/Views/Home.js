@@ -75,7 +75,7 @@ function Home() {
                     <h3>Latest news:</h3>
                 </div>
             </div>
-            <div className="row">
+            <div className="row row-cols-1 row-cols-md-3 g-4">
                 {articleElements}
             </div>
         </div>

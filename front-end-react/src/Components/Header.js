@@ -3,8 +3,8 @@ import logo from '../Assets/Images/logo.png'
 
 function Header() {
     return (
-        <div>
-            <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <div className="container">
+            <nav className="navbar navbar-expand-lg navbar-light">
                 <div className="container-fluid">
                     <NavLink to="/" className="navbar-brand">
                         <img src={logo} height="30" alt="Logo" />
