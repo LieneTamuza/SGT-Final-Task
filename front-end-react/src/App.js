@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import News from './Views/News';
 import Header from './Components/Header';
 import Home from './Views/Home';
 import Footer from './Components/Footer';
@@ -13,6 +14,9 @@ function App() {
                 <Switch>
                     <Route exact path='/'>
                         <Home />
+                    </Route>
+                    <Route path='/news'>
+                        <News />
                     </Route>
                     <Route path=''>
                         <Page404 />
