@@ -22,7 +22,7 @@ import article_3_7 from '../Assets/Images/article_3_7.jpg';
 
 const articles = [
     {
-        slug: "easter-prize-will-be-the-first-knock-out-sprint-competition-in-Latvia",
+        slug: "easter-prize-will-be-the-first-knock-out-sprint-competition-in-latvia",
         title: "Easter Prize will be the first knock-out sprint competition in Latvia",
         mainImage: article_1_1,
         topic: "Following the development of international sprint orienteering, something new has been included in the Easter Prize competition schedule - knock-out sprint format racing for MW18, MW35 and Elite class athletes. Easter Prize was supposed to take place in Mežciems on Second Easter day, but due to Covid-19 pandemic it has been rescheduled to end of summer - August 28th",

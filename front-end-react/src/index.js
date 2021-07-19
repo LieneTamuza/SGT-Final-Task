@@ -1,11 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
+import SimpleReactLightbox from 'simple-react-lightbox';
 import 'bootstrap/dist/css/bootstrap.css';
 
 ReactDOM.render(
     <React.StrictMode>
-        <App />
+        <SimpleReactLightbox>
+            <App />
+        </SimpleReactLightbox>
     </React.StrictMode>,
     document.getElementById('root')
 );

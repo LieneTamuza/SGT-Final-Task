@@ -15,7 +15,7 @@ function Home() {
                         <img className="card-img-top article-image" src={article.mainImage} alt="..." />
                     </NavLink>
                     <div className="card-body">
-                        <h5 className="card-title text-right"><NavLink to={'/article/' + article.slug}>{article.title}</NavLink></h5>
+                        <h5 className="card-title text-right"><NavLink to={'/news/article/' + article.slug}>{article.title}</NavLink></h5>
                         <p className="card-text">{article.topic}</p>
                     </div>
                 </div>
