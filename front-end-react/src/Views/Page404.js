@@ -1,7 +1,6 @@
 import { NavLink } from 'react-router-dom';
 
 function Page404() {
-
     return (
         <div className="container px-4 py-5 my-5 text-center error-template">
             <h1 className="display-5 fw-bold">Oops!</h1>
