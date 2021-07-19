@@ -5,6 +5,7 @@ import Home from './Views/Home';
 import Footer from './Components/Footer';
 import News from './Views/News';
 import Page404 from './Views/Page404';
+import Register from './Views/Register';
 
 function App() {
     return (
@@ -21,6 +22,9 @@ function App() {
                     </Route>
                     <Route path='/news/article/:articleId'>
                         <Article />
+                    </Route>
+                    <Route path='/register'>
+                        <Register />
                     </Route>
                     <Route path=''>
                         <Page404 />

@@ -12,7 +12,7 @@ function Article() {
     const breadcrumbPaths = [
         { link: '/', title: 'Home' },
         { link: '/news', title: 'News' },
-        { title: article.title },
+        { title: article.title }
     ];
 
     const imageThumbnails = article.images.map((image, index) => {
