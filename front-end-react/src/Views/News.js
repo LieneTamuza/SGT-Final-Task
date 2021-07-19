@@ -1,7 +1,12 @@
 import { NavLink } from 'react-router-dom';
 import articles from '../Data/Articles';
+import Breadcrumb from '../Components/Breadcrumb';
 
 function News() {
+    const breadcrumbPaths = [
+        { link: '/', title: 'Home' },
+        { title: 'News' },
+    ];
 
     const newsElements = articles.map((article, index) => {
         return (
@@ -25,6 +30,11 @@ function News() {
 
     return (
         <div className="container">
+            <div className="row">
+                <div className="col">
+                    <Breadcrumb paths={breadcrumbPaths} />
+                </div>
+            </div>
             <div className="row">
                 <div className="col">
                     <h1>News</h1>
