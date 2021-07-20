@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import About from './Views/About';
 import Article from './Views/Article';
 import Header from './Components/Header';
 import Home from './Views/Home';
@@ -25,6 +26,9 @@ function App() {
                     </Route>
                     <Route path='/register'>
                         <Register />
+                    </Route>
+                    <Route path='/about'>
+                        <About />
                     </Route>
                     <Route path=''>
                         <Page404 />
