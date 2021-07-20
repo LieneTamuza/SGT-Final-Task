@@ -1,8 +1,13 @@
+import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import articles from '../Data/Articles';
 import Breadcrumb from '../Components/Breadcrumb';
+import Pagination from '../Components/Pagination';
 
 function News() {
+    const [currentPage, setCurrentPage] = useState(1);
+    const [articlesPerPage] = useState(3);
+
     const breadcrumbPaths = [
         { link: '/', title: 'Home' },
         { title: 'News' },
@@ -28,6 +33,10 @@ function News() {
         );
     })
 
+    const paginate = (pageNumber) => {
+        setCurrentPage(pageNumber);
+    }
+
     return (
         <div className="container">
             <div className="row">
@@ -41,6 +50,17 @@ function News() {
                 </div>
             </div>
             {newsElements}
+            <div className="container-fluid content-wrapper">
+                <div className="row pb-5">
+                    <div className="col-12 col-md-8 offset-md-6">
+                        <Pagination
+                            articlesPerPage={articlesPerPage}
+                            totalArticles={articles.length}
+                            paginate={paginate}
+                        />
+                    </div>
+                </div>
+            </div>
         </div>
     );
 }
