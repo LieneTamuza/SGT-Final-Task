@@ -13,7 +13,7 @@ function News() {
             <div className="row mb-5 pb-3 border-bottom" key={index}>
                 <div className="col-12 col-md-3">
                     <NavLink to={'/news/article/' + article.slug}>
-                        <img className="img-fluid" src={article.mainImage} />
+                        <img className="img-fluid" src={article.mainImage} alt="Main" />
                     </NavLink>
                 </div>
                 <div className="col-12 col-md-9">

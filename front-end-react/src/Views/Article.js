@@ -1,12 +1,11 @@
-import { useState } from 'react';
-import { NavLink, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { SRLWrapper } from "simple-react-lightbox";
 import articles from '../Data/Articles';
 import Breadcrumb from '../Components/Breadcrumb';
 
 function Article() {
     const { articleId } = useParams();
-    const filteredArticles = articles.filter((article) => { return articleId == article.slug });
+    const filteredArticles = articles.filter((article) => { return articleId === article.slug });
     const article = filteredArticles[0];
 
     const breadcrumbPaths = [
@@ -19,7 +18,7 @@ function Article() {
         return (
             <div className="col-4 mt-3" key={index}>
                 <a href={image}>
-                    <img className="img-fluid" src={image} />
+                    <img className="img-fluid" src={image} alt="Thumbnail"/>
                 </a>
             </div>
         );
@@ -42,7 +41,7 @@ function Article() {
                     <SRLWrapper>
                         <div className="row">
                             <div className="col">
-                                <img src={article.mainImage} className="img-fluid" />
+                                <img src={article.mainImage} className="img-fluid" alt="Thumbnail" />
                             </div>
                         </div>
                         <div className="row">

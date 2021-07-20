@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import About from './Views/About';
 import Article from './Views/Article';
+import Chat from './Views/Chat';
 import Header from './Components/Header';
 import Home from './Views/Home';
 import Footer from './Components/Footer';
@@ -23,6 +24,9 @@ function App() {
                     </Route>
                     <Route path='/news/article/:articleId'>
                         <Article />
+                    </Route>
+                    <Route path='/chat'>
+                        <Chat />
                     </Route>
                     <Route path='/register'>
                         <Register />
