@@ -24,21 +24,45 @@ function Contacts() {
     return (
         <div className="container mb-5">
             <h4>Contacts</h4>
-            <LoadScript
-                googleMapsApiKey=''>
-                <GoogleMap
-                    mapContainerStyle={mapStyles}
-                    zoom={13}
-                    center={defaultCenter}>
-                    {
-                        locations.map(item => {
-                        return (
-                            <Marker key={item.name} position={item.location} />
-                        );
-                    })
-                    }
-                </GoogleMap>
-            </LoadScript>
+            <div className="row">
+                <div className="col-12 col-md-8">
+                    <LoadScript
+                        googleMapsApiKey=''>
+                        <GoogleMap
+                            mapContainerStyle={mapStyles}
+                            zoom={13}
+                            center={defaultCenter}>
+                            {
+                                locations.map(item => {
+                                    return (
+                                        <Marker key={item.name} position={item.location} />
+                                    );
+                                })
+                            }
+                        </GoogleMap>
+                    </LoadScript>
+                </div>
+                <div className="col-12 col-md-4">
+                    <div className="row mb-3">
+                        <div className="col">
+                            <h5 className="cont-info-heading">Address:</h5>
+                            <p className="cont-info-txt">Sports complex "Mežciems", Hipokrāta iela 27, Rīga</p>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col mb-3">
+                            <h5 className="cont-info-heading">Email:</h5>
+                            <p className="cont-info-txt">info@ozonsok.lv</p>
+                        </div>
+                    </div>
+                    <div className="row mb-3">
+                        <div className="col">
+                            <h5 className="cont-info-heading">Phone:</h5>
+                            <p className="cont-info-txt">+371 26685479</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 }
