@@ -149,7 +149,7 @@ function Form() {
                         />
                         {errors.termsInput && <p>{errors.termsInput.message}</p>}
                         <label className="form-check-label" htmlFor="termsInput">
-                            I have read and agree to the <NavLink to="">Terms and Conditions</NavLink> and <NavLink to="">Privacy Policy</NavLink>*
+                            I have read and agree to the <NavLink to="/terms-and-conditions">Terms and Conditions</NavLink> and <NavLink to="privacy-policy">Privacy Policy</NavLink>*
                         </label>
                     </div>
                 </div>
