@@ -3,8 +3,7 @@ import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 function Contacts() {
     const mapStyles = {
         height: "50vh",
-        width: "100%",
-        borderRadius: "5px"
+        width: "100%"
     };
 
     const defaultCenter = {

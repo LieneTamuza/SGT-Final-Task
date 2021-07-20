@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import articles from '../Data/Articles';
 import Breadcrumb from '../Components/Breadcrumb';
 import Pagination from '../Components/Pagination';
+import '../Assets/CSS/style.css';
 
 function News() {
     const [currentPage, setCurrentPage] = useState(1);
@@ -15,10 +16,10 @@ function News() {
 
     const newsElements = articles.map((article, index) => {
         return (
-            <div className="row mb-5 pb-3 border-bottom" key={index}>
+            <div className="row mb-3 pb-3 border-bottom" key={index}>
                 <div className="col-12 col-md-3">
                     <NavLink to={'/news/article/' + article.slug}>
-                        <img className="img-fluid" src={article.mainImage} alt="Main" />
+                        <img className="article-image img-fluid" src={article.mainImage} alt="Main" />
                     </NavLink>
                 </div>
                 <div className="col-12 col-md-9">
@@ -46,19 +47,19 @@ function News() {
             </div>
             <div className="row">
                 <div className="col">
-                    <h1>News</h1>
+                    {/* <h2>News</h2> */}
                 </div>
             </div>
-            {newsElements}
-            <div className="container-fluid content-wrapper">
-                <div className="row pb-5">
-                    <div className="col-12 col-md-8 offset-md-6">
-                        <Pagination
-                            articlesPerPage={articlesPerPage}
-                            totalArticles={articles.length}
-                            paginate={paginate}
-                        />
-                    </div>
+            <div>
+                {newsElements}
+            </div>
+            <div className="row mb-5">
+                <div className="col d-flex justify-content-end">
+                    <Pagination
+                        articlesPerPage={articlesPerPage}
+                        totalArticles={articles.length}
+                        paginate={paginate}
+                    />
                 </div>
             </div>
         </div>

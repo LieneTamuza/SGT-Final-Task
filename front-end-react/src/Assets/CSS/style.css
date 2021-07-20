@@ -1,0 +1,27 @@
+a:visited, a:link, a:active {
+    text-decoration: none;
+}
+
+a {
+    color: black !important;
+}
+
+a:hover {
+    color: #0066ff !important;
+}
+
+.full-article:hover {
+    text-decoration: none;
+}
+
+.article-image:hover {
+    opacity: 0.5;
+}
+
+.breadcrumb {
+    background: none;
+}
+
+.lead:hover {
+    color: #0066ff !important;
+}

@@ -5,14 +5,15 @@ import home_2 from '../Assets/Images/home_2.JPG';
 import home_3 from '../Assets/Images/home_3.JPG';
 import home_4 from '../Assets/Images/home_4.JPG';
 import home_5 from '../Assets/Images/home_5.JPG';
+import '../Assets/CSS/style.css';
 
 function Home() {
     const articleElements = articles.map((article, index) => {
         return (
             <div className="col mb-5" key={index}>
                 <div class="card h-100">
-                    <NavLink to={'/article/' + article.slug}>
-                        <img className="card-img-top article-image" src={article.mainImage} alt="..." />
+                    <NavLink to={'/news/article/' + article.slug}>
+                        <img className="card-img-top img-fluid article-image" src={article.mainImage} alt="..." />
                     </NavLink>
                     <div className="card-body">
                         <h5 className="card-title text-right"><NavLink to={'/news/article/' + article.slug}>{article.title}</NavLink></h5>
@@ -42,19 +43,19 @@ function Home() {
                         </div>
                         <div className="carousel-inner">
                             <div className="carousel-item active">
-                                <img src={home_1} className="d-block w-100" alt="Slide 1" />
+                                <img src={home_1} className="img-fluid d-block w-100" alt="Slide 1" />
                             </div>
                             <div className="carousel-item">
-                                <img src={home_2} className="d-block w-100" alt="Slide 2" />
+                                <img src={home_2} className="img-fluid d-block w-100" alt="Slide 2" />
                             </div>
                             <div className="carousel-item">
-                                <img src={home_3} className="d-block w-100" alt="Slide 3" />
+                                <img src={home_3} className="img-fluid d-block w-100" alt="Slide 3" />
                             </div>
                             <div className="carousel-item">
-                                <img src={home_4} className="d-block w-100" alt="Slide 4" />
+                                <img src={home_4} className="img-fluid d-block w-100" alt="Slide 4" />
                             </div>
                             <div className="carousel-item">
-                                <img src={home_5} className="d-block w-100" alt="Slide 5" />
+                                <img src={home_5} className="img-fluid d-block w-100" alt="Slide 5" />
                             </div>
                         </div>
                         <button className="carousel-control-prev" type="button" data-bs-target="#carousel"

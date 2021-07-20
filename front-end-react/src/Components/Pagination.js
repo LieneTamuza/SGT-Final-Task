@@ -7,7 +7,7 @@ function Pagination({ articlesPerPage, totalArticles, paginate }) {
 
     return (
         <nav>
-            <ul className="pagination pt-5">
+            <ul className="pagination">
                 {pageNumbers.map((number, index) => {
 
                     return (

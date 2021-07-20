@@ -31,7 +31,7 @@ function Article() {
                     <Breadcrumb paths={breadcrumbPaths} />
                 </div>
             </div>
-            <div className="row">
+            <div className="row mb-3">
                 <div className="col">
                     <h1>{article.title}</h1>
                 </div>

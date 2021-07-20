@@ -6,6 +6,7 @@ import EasterPrize from '../Components/About/EasterPrize';
 import Ozons from '../Components/About/Ozons';
 import SprintO from '../Components/About/SprintO';
 import 'react-tabs/style/react-tabs.css';
+import '../Assets/CSS/style.css';
 
 function About() {
     const breadcrumbPaths = [
