@@ -1,3 +1,10 @@
+import article_0_1 from '../Assets/Images/article_0_1.JPG';
+import article_0_2 from '../Assets/Images/article_0_2.JPG';
+import article_0_3 from '../Assets/Images/article_0_3.JPG';
+import article_0_4 from '../Assets/Images/article_0_4.JPG';
+import article_0_5 from '../Assets/Images/article_0_5.JPG';
+import article_0_6 from '../Assets/Images/article_0_6.JPG';
+import article_0_7 from '../Assets/Images/article_0_7.JPG';
 import article_1_1 from '../Assets/Images/article_1_1.JPG';
 import article_1_2 from '../Assets/Images/article_1_2.JPG';
 import article_1_3 from '../Assets/Images/article_1_3.JPG';
@@ -21,6 +28,23 @@ import article_3_6 from '../Assets/Images/article_3_6.jpg';
 import article_3_7 from '../Assets/Images/article_3_7.jpg';
 
 const articles = [
+    {
+        slug: "what-beast-is-the-knock-out-sprint",
+        title: "What beast is the knock-out sprint?",
+        mainImage: article_0_1,
+        topic: "The Knock-Out Sprint format is a newly introduced format to the Orienteering World Cup and will also be staged on the Nokian Tyres World Orienteering championships in 2022",
+        paragraphs: [
+            "The qualification round is an shorter, individual start, sprint competition where it is all about to individually run a sprint course and have the top 12 best running time in your heat. All athletes are allocated to three different parallel heats, each with an estimated winning time of 8-10 minutes. The best 12 in each qualification heat qualify for the Quarter finals. All 36 qualifiers are divided into 6 quarter finals with 6 athletes in each quarterfinal. It is in the quarter finals that the Knock-Out starts and it is first to finish that matters. 6 athletes stand on the start line in each heat and start at the same time. The first 3 to finish in each heat qualify for the semi finals. In semi finals there are 3 heats with 6 athletes on each one. The two first to finish in each heat qualify for the final. The last race is one and only final with 6 athletes. First to finish wins the competition. Placings are determined by the sequence of crossing the finish line. Because of it’s short duration and mass start, speed to decide the finishing order and agility to move through terrain in an effective manner, are qualities which play a bigger role in knock-out sprint than in other orienteering distances. That and intense orienteering where even the smallest differences can be decisive, makes for an exciting entertainment. So, who are the best at this new format of orienteering? Basically, the same orienteers who have already shown great capacity at “classic” sprint orienteering - Swiss and Swedish orienteers can usually be counted among the absolute favourites.",
+        ],
+        images: [
+            article_0_2,
+            article_0_3,
+            article_0_4,
+            article_0_5,
+            article_0_6,
+            article_0_7,
+        ],
+    },
     {
         slug: "easter-prize-will-be-the-first-knock-out-sprint-competition-in-latvia",
         title: "Easter Prize will be the first knock-out sprint competition in Latvia",
