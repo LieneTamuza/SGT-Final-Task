@@ -11,8 +11,8 @@ function Form() {
     } = useForm({
         mode: "onChange"
     });
-    const onSubmit = (data, event) => {
-        event.preventDefault();
+    const onSubmit = (data) => {
+        console.log(data);
         alert("Thank you for registering!");
     };
     const password = useRef({});
@@ -101,7 +101,7 @@ function Form() {
                             <input
                                 type="text"
                                 className="form-control"
-                                placeholder="SportIdent number *"
+                                placeholder="SportIdent number "
                                 {...register("sportidentNumber", {
                                     minLength: {
                                         value: 5,
