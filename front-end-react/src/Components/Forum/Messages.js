@@ -13,8 +13,8 @@ function Messages({ messages }) {
                 <li key={index} className="list-group-item">
                     <div className="row">
                         <div className="col d-flex justify-content-between align-items-center">
-                            <span className="user-name lead fw-bold mx-3 chat-name">{message.userName}</span>
-                            <span className="review-sent badge bg-success fw-lighter">{format(parseJSON(message.createdAt), 'yyyy/MM/dd H:m')}
+                            <span className="user-name fw-bolder">{message.username}</span>
+                            <span className="review-sent badge bg-primary fw-lighter">{format(parseJSON(message.createdAt), "yyyy/MM/dd H:m")}
                             </span>
                         </div>
                     </div>

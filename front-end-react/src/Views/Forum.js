@@ -22,15 +22,15 @@ function Forum() {
                     <Breadcrumb paths={breadcrumbPaths} />
                 </div>
             </div>
-            <div>
-                <p>Do you have a question or a request? Then get in touch with us.</p>
-                <p>Simply fill in the following fields or write to us via info@ozonsok.lv.</p>
+            <div className="px-4">
+                <p>Do you have a question or a request?</p>
+                <p>Fill in the following fields or write to us via info@ozonsok.lv.</p>
             </div>
-            <div className="row">
-                <div className="col">
+            <div className="row mt-4">
+                <div className="col-12 col-lg-6">
                     <MessageForm reloadMessagesList={reloadMessageList} />
                 </div>
-                <div className="col">
+                <div className="col-12 col-lg-6">
                     <MessageList reloadMessagesList={reloadMessageList} counter={counter} />
                 </div>
             </div>

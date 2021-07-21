@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 import Messages from './Messages';
 
-function ChatMessagesList({ counter }) {
+function MessageList({ counter }) {
 
     const [messages, setMessages] = useState({
         loading: true,
@@ -35,10 +35,10 @@ function ChatMessagesList({ counter }) {
     }, [counter]);
 
     return (
-        <ul className="list-group mt-2">
+        <ul className="list-group">
             <Messages messages={messages} />
         </ul>
     );
 }
 
-export default ChatMessagesList;
+export default MessageList;
