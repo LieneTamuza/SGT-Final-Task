@@ -15,7 +15,7 @@ function Register() {
                 </div>
             </div>
             <div className="row">
-                <div className="col-12 col-lg-6 px-3 my-2">
+                <div className="col col-lg-6 my-2">
                     <Form />
                 </div>
             </div>

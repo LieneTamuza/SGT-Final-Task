@@ -96,7 +96,7 @@ function Form() {
                 </div>
 
                 <div className="row mb-3">
-                    <div className="col form-validate">
+                    <div className="col col-7 form-validate">
                         <div className="input-group">
                             <input
                                 type="text"
@@ -115,12 +115,9 @@ function Form() {
                         </div>
                         {errors.sportidentNumber && <p>{errors.sportidentNumber.message}</p>}
                     </div>
-                    <div className="col form-validate">
+                    <div className="col col-5 form-validate">
                         <div className="form-check py-2">
-                            <input className="form-check-input" type="checkbox" value="" id="rent" {...register("rent", {
-                                required: "⚠ Please check this box if you want to proceed"
-                            })}
-                            />
+                            <input className="form-check-input" type="checkbox" value="" id="rent" />
                             {errors.rent && <p>{errors.rent.message}</p>}
                             <label className="form-check-label" htmlFor="rent">
                                 Rent SIAC
@@ -197,7 +194,7 @@ function Form() {
 
                 <div className="row">
                     <div className="col">
-                        <button type="submit" className="btn btn-primary my-3">Submit</button>
+                        <button type="submit" className="btn btn-primary">Submit</button>
                     </div>
                 </div>
             </form>
