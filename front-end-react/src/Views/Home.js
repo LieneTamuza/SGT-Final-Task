@@ -12,11 +12,11 @@ function Home() {
         return (
             <div className="col mb-5" key={index}>
                 <div class="card h-100">
-                    <NavLink to={'/news/article/' + article.slug}>
+                    <NavLink to={'/news/' + article.slug}>
                         <img className="card-img-top img-fluid article-image" src={article.mainImage} alt="..." />
                     </NavLink>
                     <div className="card-body">
-                        <h5 className="card-title text-right"><NavLink to={'/news/article/' + article.slug}>{article.title}</NavLink></h5>
+                        <h5 className="card-title text-right"><NavLink to={'/news/' + article.slug}>{article.title}</NavLink></h5>
                         <p className="card-text">{article.topic}</p>
                     </div>
                 </div>
