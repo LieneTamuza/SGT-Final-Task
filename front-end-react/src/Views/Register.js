@@ -1,5 +1,5 @@
 import Breadcrumb from '../Components/Breadcrumb';
-import Form from "../Components/Form";
+import Form from '../Components/Register/Form';
 
 function Register() {
     const breadcrumbPaths = [
@@ -14,9 +14,8 @@ function Register() {
                     <Breadcrumb paths={breadcrumbPaths} />
                 </div>
             </div>
-            <div className="row mt-2">
-                <div className="col-12 col-lg-6 offset-lg-3 p-5 my-2">
-                    <h3 className="mb-3">Register</h3>
+            <div className="row">
+                <div className="col-12 col-lg-6 px-3 my-2">
                     <Form />
                 </div>
             </div>
