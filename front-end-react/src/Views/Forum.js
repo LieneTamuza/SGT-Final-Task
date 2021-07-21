@@ -1,17 +1,17 @@
 import { useState } from 'react';
 import Breadcrumb from '../Components/Breadcrumb';
-import ChatMessagesList from '../Components/Chat/ChatMessagesList';
-import NewMessageForm from '../Components/Chat/NewMessageForm';
+import MessageForm from '../Components/Forum/MessageForm';
+import MessageList from '../Components/Forum/MessageList';
 
-function Chat() {
+function Forum() {
     const breadcrumbPaths = [
         { link: '/', title: 'Home' },
-        { title: 'Chat' }
+        { title: 'Forum' }
     ];
 
     const [counter, setCounter] = useState(0);
 
-    const reloadMessagesList = () => {
+    const reloadMessageList = () => {
         setCounter(counter + 1);
     }
 
@@ -22,17 +22,20 @@ function Chat() {
                     <Breadcrumb paths={breadcrumbPaths} />
                 </div>
             </div>
+            <div>
+                <p>Do you have a question or a request? Then get in touch with us.</p>
+                <p>Simply fill in the following fields or write to us via info@ozonsok.lv.</p>
+            </div>
             <div className="row">
                 <div className="col">
-                    <p>Do you have a question or a request? Then get in touch with us. Simply fill in the following fields or write to us via info@ozonsok.lv.</p>
-                    <NewMessageForm reloadMessagesList={reloadMessagesList} />
+                    <MessageForm reloadMessagesList={reloadMessageList} />
                 </div>
                 <div className="col">
-                    <ChatMessagesList reloadMessagesList={reloadMessagesList} counter={counter} />
+                    <MessageList reloadMessagesList={reloadMessageList} counter={counter} />
                 </div>
             </div>
         </div>
     );
 }
 
-export default Chat;
+export default Forum;
