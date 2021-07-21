@@ -197,7 +197,7 @@ function Form() {
 
                 <div className="row">
                     <div className="col">
-                        <button type="submit" className="btn btn-primary my-3">Register</button>
+                        <button type="submit" className="btn btn-primary my-3">Submit</button>
                     </div>
                 </div>
             </form>
