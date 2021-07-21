@@ -22,7 +22,7 @@ function Contacts() {
 
     return (
         <div className="container mb-5">
-            <h4>Contacts</h4>
+            <h5 className="fw-bolder">Contacts</h5>
             <div className="row">
                 <div className="col-12 col-md-8">
                     <LoadScript
@@ -41,7 +41,7 @@ function Contacts() {
                         </GoogleMap>
                     </LoadScript>
                 </div>
-                <div className="col-12 col-md-4">
+                <div className="col-12 col-md-4 mt-5">
                     <div className="row mb-3">
                         <div className="col">
                             <h5 className="cont-info-heading">Address:</h5>

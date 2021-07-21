@@ -25,10 +25,10 @@ function About() {
                 <div className="col">
                     <Tabs>
                         <TabList>
-                            <Tab><p className="lead mb-1 fw-bolder">Easter Prize</p></Tab>
-                            <Tab><p className="lead mb-1 fw-bolder">Sprint-O</p></Tab>
-                            <Tab><p className="lead mb-1 fw-bolder">Ozons</p></Tab>
-                            <Tab><p className="lead mb-1 fw-bolder">Collaboration</p></Tab>
+                            <Tab><p className="mb-1 fw-bolder">Easter Prize</p></Tab>
+                            <Tab><p className="mb-1 fw-bolder">Sprint-O</p></Tab>
+                            <Tab><p className="mb-1 fw-bolder">Ozons</p></Tab>
+                            <Tab><p className="mb-1 fw-bolder">Collaboration</p></Tab>
                         </TabList>
                         <TabPanel>
                             <EasterPrize />
