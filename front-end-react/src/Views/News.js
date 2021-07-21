@@ -45,21 +45,12 @@ function News() {
                     <Breadcrumb paths={breadcrumbPaths} />
                 </div>
             </div>
-            <div className="row">
-                <div className="col">
-                    {/* <h2>News</h2> */}
-                </div>
-            </div>
             <div>
                 {newsElements}
             </div>
             <div className="row mb-5">
                 <div className="col d-flex justify-content-end">
-                    <Pagination
-                        articlesPerPage={articlesPerPage}
-                        totalArticles={articles.length}
-                        paginate={paginate}
-                    />
+                    <Pagination articlesPerPage={articlesPerPage} totalArticles={articles.length} paginate={paginate} />
                 </div>
             </div>
         </div>
