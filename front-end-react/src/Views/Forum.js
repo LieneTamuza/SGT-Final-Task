@@ -16,7 +16,7 @@ function Forum() {
     }
 
     return (
-        <div className="container">
+        <div className="container mb-5">
             <div className="row">
                 <div className="col">
                     <Breadcrumb paths={breadcrumbPaths} />
