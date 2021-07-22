@@ -18,7 +18,7 @@ function Article() {
         return (
             <div className="col-4 mt-3" key={index}>
                 <a href={image}>
-                    <img className="img-fluid" src={image} alt="Thumbnail"/>
+                    <img className="img-fluid" src={image} alt="Easter Prize 2020"/>
                 </a>
             </div>
         );
@@ -41,7 +41,7 @@ function Article() {
                     <SRLWrapper>
                         <div className="row">
                             <div className="col">
-                                <img src={article.mainImage} className="img-fluid" alt="Thumbnail" />
+                                <img src={article.mainImage} className="img-fluid" alt="Easter Prize 2020" />
                             </div>
                         </div>
                         <div className="row">
