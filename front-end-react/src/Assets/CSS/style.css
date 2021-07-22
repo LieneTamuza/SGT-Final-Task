@@ -3,11 +3,11 @@ a:visited, a:link, a:active {
 }
 
 a {
-    color: black !important;
+    color: #000066 !important;
 }
 
 a:hover {
-    color: #0066ff !important;
+    color: #0d6efd !important;
 }
 
 .full-article:hover {
@@ -22,6 +22,6 @@ a:hover {
     background: none;
 }
 
-.lead:hover {
-    color: #0066ff !important;
+.tab:hover {
+    color: #0d6efd !important;
 }
