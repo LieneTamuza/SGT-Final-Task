@@ -26,7 +26,7 @@ function Contacts() {
             <div className="row">
                 <div className="col-12 col-md-8">
                     <LoadScript
-                        googleMapsApiKey="AIzaSyCudfpUTAwz5lh2KwiKlQNgpCPHotU-Gfg">
+                        googleMapsApiKey="YOUR_API_KEY">
                         <GoogleMap
                             mapContainerStyle={mapStyles}
                             zoom={13}
